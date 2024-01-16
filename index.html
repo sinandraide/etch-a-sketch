@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Etch-a-Sketch</title>
+    <link rel="icon" href="images/project-logo.png" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="slider.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="main-container">
+      <header>Etch-a-Sketch</header>
+      <main>
+        <div class="sketch-container">
+          <div class="options">
+            <div class="box-amount">
+              <label for="slider">Size: </label>
+              <input
+                type="range"
+                min="10"
+                max="100"
+                value="10"
+                class="slider"
+                step="5"
+              />
+              <div class="amount"></div>
+            </div>
+            <button class="btn black">Black</button>
+            <button class="btn random">Random</button>
+            <button class="btn shade">Shade</button>
+            <button class="btn erase">Erase</button>
+          </div>
+          <div class="content"></div>
+        </div>
+      </main>
+      <footer>
+        <img class="github" src="images/github-icon.png" alt="github-icon" />
+        <a
+          href="https://github.com/sinandraide"
+          target="_blank"
+          rel="NOOPENER NOREFRRER"
+          style="text-decoration: none; cursor: pointer; color: white"
+        >
+          sinandraide</a
+        >
+      </footer>
+    </div>
+  </body>
+</html>

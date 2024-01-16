@@ -11,7 +11,7 @@ A simple web application that allows users to create sketches via hovering over 
 ## Features
 
 - Intuitive user interface
-- Hover effects for sketeches
+- Hover effects for sketches
 - Dynamic grid size change
 
 ## Contributing
