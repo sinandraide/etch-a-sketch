@@ -43,8 +43,11 @@ const setDimensions = (e) => {
   setGrid();
 };
 
-const setBlack = () => {
+const setBlack = (e) => {
   color = "black";
+  // make button big
+  _setActiveScale(e);
+
   setHoverColor(color);
 };
 
@@ -53,9 +56,13 @@ const setHoverColor = (color) => {
   divs.forEach((div) =>
     div.addEventListener(
       "mousemove",
-      (div) => (div.target.style.backgroundColor = color)
+      (e) => (e.target.style.backgroundColor = color)
     )
   );
+};
+
+const _setActiveScale = (event) => {
+  event.target.style["transform"] = "scale(1.1)";
 };
 
 // activate buttons and slider
